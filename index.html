@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IKFC Boxing Championship</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--================ NAVBAR ================-->
+
+    <nav>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <ul>
+
+            <li>TRANG CHỦ</li>
+            <li>TRẬN ĐẤU</li>
+            <li>THÀNH VIÊN</li>
+            <li>CẦM ĐẦU</li>
+            <li>VI ĐÉO</li>
+            <li>TÀI TRỢ</li>
+            <li>LIÊN HỆ</li>
+
+        </ul>
+
+        <div class="earth">
+            🌐
+        </div>
+
+    </nav>
+
+
+
+    <!--================ HERO ================-->
+
+    <section class="hero">
+
+        <img src="images/logo.png" alt="">
+
+    </section>
+
+
+
+    <!--================ THÀNH VIÊN ================-->
+
+    <section class="members">
+
+        <h1>THÀNH VIÊN</h1>
+
+        <div class="member-list">
+
+            <div class="member"
+                onclick="showMember('images/member1.jpg','DŨ DĂN DŨNG','12 LÍT BIA','36','UỐNG BẤT BẠI')">
+
+                <img src="images/member1.jpg">
+
+            </div>
+
+            <div class="member"
+                onclick="showMember('images/member2.jpg','CHỊU SÁU','80KG ','27','TỔN THẤT BẰNG CÁI TÊN')">
+
+                <img src="images/member2.jpg">
+
+            </div>
+
+            <div class="member"
+                onclick="showMember('images/member3.jpg','DỖ LONG CU','50KG CẢ CỨT ','19','GIẤY CHỐNG ĐẠN')">
+
+                <img src="images/member3.jpg">
+
+            </div>
+
+            <div class="member"
+                onclick="showMember('images/member4.jpg','MỰC','50KG TÍNH CẢ BỈM','19','CHÓ ĂN CỨT')">
+
+                <img src="images/member4.jpg">
+
+            </div>
+
+            <div class="member"
+                onclick="showMember('images/member5.jpg','KANG CƯỜNG TRÚ','100 XẠO LỒN','22','CÂN 3 KHÔNG LẠI')">
+
+                <img src="images/member5.jpg">
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= NGƯỜI CẦM ĐẦU ================= -->
+
+<!-- ================= NGƯỜI CẦM ĐẦU ================= -->
+
+<section class="leader">
+
+    <h1>NGƯỜI CẦM ĐẦU</h1>
+
+    <div class="leader-card">
+
+        <div class="leader-image">
+
+            <img src="images/leader.jpg" alt="Leader">
+
+        </div>
+
+        <div class="leader-info">
+
+            <table>
+
+                <tr>
+
+                    <td>Họ tên</td>
+
+                    <td>:</td>
+
+                    <td>NẾP NGOÀI BẮC</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Chức vụ</td>
+
+                    <td>:</td>
+
+                    <td>BAN PHƯỚC CHO TỤI BÂY</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Quốc tịch</td>
+
+                    <td>:</td>
+
+                    <td>KHÁT NƯỚC</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Kinh nghiệm</td>
+
+                    <td>:</td>
+
+                    <td>ĐÉO CÓ</td>
+
+                </tr>
+
+            </table>
+
+            <h2>LỊCH SỬ</h2>
+
+            <p>
+
+               THÌ NÓI CHUNG LÀ, 
+               THÌ NÓ DẬY ĐÓ,
+               NHƯNG MÀ CÁI VẤN ĐỀ LÀ, 
+               NÓI CHUNG LÀ BA CÁI ĐỒ LUYÊN THUYÊN,
+               CẶC.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= VIDEO ================= -->
+
+<section class="video-section" id="video">
+
+    <h1>VIDEO NỔI BẬT</h1>
+
+    <p class="video-text">
+        Highlight trận đấu mới nhất của IKFC Boxing Championship
+    </p>
+
+    <div class="video-box">
+
+        <video controls>
+            <source src="videos/fight.mp4" type="video/mp4">
+        </video>
+
+    </div>
+</section>
+
+
+
+    <!--================ POPUP ================-->
+
+    <div id="popup">
+
+        <div class="popup-box">
+
+            <span class="close" onclick="closePopup()">&times;</span>
+
+            <img id="popup-img" src="">
+
+            <h2 id="popup-name"></h2>
+
+            <p id="popup-weight"></p>
+
+            <p id="popup-age"></p>
+
+            <p id="popup-record"></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!--================ FOOTER ================-->
+
+    <footer>
+
+        <p>© 2026 IKFC - Iron Knuckle Fighting Championship</p>
+
+    </footer>
+
+
+
+    <!--================ SCRIPT ================-->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
